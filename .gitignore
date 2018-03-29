@@ -1,2 +1,5 @@
 ./React_/node_modules
+./React_/package-lock.json
+
 ./Redux/node_modules
+./Redux/package-lock.json
