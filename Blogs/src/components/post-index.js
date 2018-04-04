@@ -1,5 +1,4 @@
-import React, {Component} from 'react';
-import ReducerPost from '../reducers/reducer-post';
+import React, { Component } from 'react';
 
 import fetchPosts from '../actions';
 import { connect } from 'react-redux';
@@ -10,13 +9,17 @@ class PostIndex extends Component {
     // this function will be called utomaticaly by REACT
     // when this component has shown up inside the DOM
     componentDidMount() {
-        this.props.fetchPosts(); 
+        this.props.fetchPosts();
     }
 
     renderPosts() {
         return _.map(this.props.posts).map(post => {
             return (
-                <li className='list-group-item' key={post.id}>{post.title}</li>
+                <li className='list-group-item' key={post.id}>
+                    <Link to={`/posts/${post.id}`}>
+                        {post.title}
+                    </Link>
+                </li>
             )
         });
     }
@@ -38,7 +41,7 @@ class PostIndex extends Component {
     }
 }
 
-function mapStateToProp({posts}) {
+function mapStateToProp({ posts }) {
     return { posts };
 }
 

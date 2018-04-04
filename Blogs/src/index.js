@@ -12,6 +12,7 @@ import { BrowserRouter, Route, Switch } from 'react-router-dom';
 
 import PostIndex from './components/post-index';
 import PostNew from './components/post-new';
+import PostShow from './components/post-show';
 
 const createStoreWithMiddleware = applyMiddleware(ReduxPromis)(createStore);
 
@@ -21,7 +22,12 @@ ReactDOM.render(
     <BrowserRouter>
       <div>
         <Switch>
+          {/* this new component will have some help staff: this.props.history to nav */}
           <Route path='/posts/new' component={PostNew} />
+          <Route path='/posts/:id' component={PostShow} />
+          {/* can set several param */}
+          {/* will be abble this.props.match.params.name */}
+          {/* <Route path='/posts/:id/:key/:index' component={PostShow} /> */}
           <Route path='/' component={PostIndex} />
         </Switch>
       </div>

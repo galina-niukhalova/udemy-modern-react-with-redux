@@ -1,0 +1,14 @@
+form a {
+    margin-left: 5px;
+}
+
+
+.btn-return-home:visited,
+.btn-return-home:link {
+    display: block;
+    padding: 20px 0;
+}
+
+.post {
+    margin: 20px auto;
+}

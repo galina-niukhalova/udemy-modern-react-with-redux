@@ -4,8 +4,8 @@
 ./Redux/node_modules
 ./Redux/package-lock.json
 
-./Weather project/node_modules
-./Weather project/package-lock.json
+./Weather/node_modules
+./Weather/package-lock.json
 
-./Blogs app/node_modules
-./Blogs app/package-lock.json
+./Blogs/node_modules
+./Blogs/package-lock.json
