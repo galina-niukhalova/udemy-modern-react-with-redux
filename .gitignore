@@ -6,3 +6,6 @@
 
 ./Weather project/node_modules
 ./Weather project/package-lock.json
+
+./Blogs app/node_modules
+./Blogs app/package-lock.json
